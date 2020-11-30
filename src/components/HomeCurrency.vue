@@ -33,7 +33,7 @@
         props: ["rates", "date"],
         data() {
             return {
-                currencies: ["RUB", "USD", "EUR", "KZT"]
+                currencies: ["RUB", "USD", "EUR"]
             }
         }
     }

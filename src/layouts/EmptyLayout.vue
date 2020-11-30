@@ -10,7 +10,7 @@
   export default {
     computed: {
       error() {
-        return this.$store.getters.error + "TEST"
+        return this.$store.getters.error
       }
     },
     watch: {

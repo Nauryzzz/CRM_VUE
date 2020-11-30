@@ -21,7 +21,7 @@
         name: "HomeBill",
         data() {
             return {
-                currencies: ["RUB", "USD", "EUR", "KZT"]
+                currencies: ["RUB", "USD", "EUR"]
             }
         },
         props: ["rates"],
