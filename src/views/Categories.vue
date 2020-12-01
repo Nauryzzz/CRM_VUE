@@ -9,7 +9,7 @@
         <CategoryCreate @created="addNewCategory"/>
 
         <CategoryEdit 
-          v-if="!!categories.length"
+          v-if="categories.length"
           :categories = "categories"
           @updated = "updateCategories"
           :key="categories.length + updateCount"      
