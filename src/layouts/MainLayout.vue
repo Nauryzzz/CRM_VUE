@@ -3,7 +3,7 @@
       <Loader v-if = "loading"/>
       <div v-else class="app-main-layout">
         <NavBar @click="isOpen = !isOpen" />
-        <SideBar v-model="isOpen" />
+        <SideBar v-model="isOpen" :key="locale"/>
 
         <main class="app-content" :class="{full: !isOpen}">
           <div class="app-page">
@@ -37,6 +37,9 @@
     computed: {
       error() {
         return this.$store.getters.error
+      },
+      locale() {
+        return this.$store.getters.info.locale
       }
     },
     watch: {
